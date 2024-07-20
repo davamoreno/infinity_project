@@ -1,4 +1,5 @@
-import AOS from 'aos';
-import 'bootstrap';
+import * as AOS from 'aos';
 
 AOS.init();
+
+import 'bootstrap';

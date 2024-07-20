@@ -9,6 +9,7 @@ class User {
     public $email;
     public $password;
     public $profile;
+    public $role_id = 2;
 
     public function __construct($db)
     {
@@ -32,8 +33,7 @@ class User {
         $stmt->bindParam(':email', $this->email);
         $stmt->bindParam(':password', $this->password);
         $stmt->bindParam(':profile', $this->profile);
-        $role_id = 2;
-        $stmt->bindParam(':role_id', $role_id);
+        $stmt->bindParam(':role_id', $this->role_id);
 
         if ($stmt->execute()) {
             return true;
@@ -41,11 +41,10 @@ class User {
         return false;
     }
     public function login(){
-        $query = 'SELECT id, name, username, email, password, profile FROM' . $this->table . ' WHERE username = :username';
+        $query = 'SELECT id, name, username, email, password, profile, role_id FROM ' . $this->table . ' WHERE username = :username';
         $stmt = $this->conn->prepare($query);
 
         $this->username = htmlspecialchars(strip_tags($this->username));
-
         $stmt->bindParam(':username', $this->username);
 
         $stmt->execute();
@@ -59,10 +58,10 @@ class User {
                 $this->username = $row['username'];
                 $this->email = $row['email'];
                 $this->profile = $row['profile'];
+                $this->role_id = $row['role_id'];
                 return true;
             }
         }
         return false;
     }
 }
-?>

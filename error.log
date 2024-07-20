@@ -115,3 +115,898 @@
 [Thu Jul 18 20:55:07.899418 2024] [php:error] [pid 2484:tid 2000] [client 127.0.0.1:64449] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'infinity_database.intouser' doesn't exist in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:36\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(36): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(21): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\signup.php(15): AuthController->register(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 36, referer: http://e-commerce.local/signup.php
 [Thu Jul 18 21:01:08.206770 2024] [php:error] [pid 2484:tid 2028] [client 127.0.0.1:64590] PHP Fatal error:  Uncaught Error: PDOStatement::bindParam(): Argument #2 ($var) cannot be passed by reference in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:35\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(21): User->register()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\signup.php(15): AuthController->register(Array)\n#2 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 35, referer: http://e-commerce.local/signup.php
 [Thu Jul 18 21:21:07.654291 2024] [php:error] [pid 2484:tid 2016] [client 127.0.0.1:65393] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'moreno' for key 'name' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(21): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\signup.php(15): AuthController->register(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/signup.php
+[Fri Jul 19 01:12:14.202147 2024] [php:warn] [pid 11680:tid 1980] [client 127.0.0.1:53318] PHP Warning:  include_once(../config/Database.php): Failed to open stream: No such file or directory in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 2
+[Fri Jul 19 01:12:14.203146 2024] [php:warn] [pid 11680:tid 1980] [client 127.0.0.1:53318] PHP Warning:  include_once(): Failed opening '../config/Database.php' for inclusion (include_path='C:\\XAMPP\\php\\PEAR') in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 2
+[Fri Jul 19 01:12:14.204148 2024] [php:error] [pid 11680:tid 1980] [client 127.0.0.1:53318] PHP Fatal error:  Uncaught Error: Class "Database" not found in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php:3\nStack trace:\n#0 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 3
+[Fri Jul 19 10:41:28.458068 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:63972] PHP Warning:  Undefined variable $username in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 10, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:41:35.441547 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:63982] PHP Warning:  Undefined variable $username in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 10, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:42:40.490679 2024] [php:warn] [pid 8244:tid 2008] [client 127.0.0.1:64040] PHP Warning:  Undefined variable $username in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:42:40.490679 2024] [php:warn] [pid 8244:tid 2008] [client 127.0.0.1:64040] PHP Warning:  Undefined variable $password in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 12, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:42:40.505505 2024] [php:error] [pid 8244:tid 2008] [client 127.0.0.1:64040] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:51\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(51): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(33): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 51, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:45:09.972733 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:64149] PHP Warning:  Undefined variable $username in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:45:09.972733 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:64149] PHP Warning:  Undefined variable $password in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 12, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:45:09.973738 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:64149] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:51\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(51): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(33): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 51, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:50:17.252719 2024] [php:warn] [pid 8244:tid 2008] [client 127.0.0.1:64338] PHP Warning:  Undefined variable $username in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:50:17.252719 2024] [php:warn] [pid 8244:tid 2008] [client 127.0.0.1:64338] PHP Warning:  Undefined variable $password in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 12, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:50:17.253722 2024] [php:error] [pid 8244:tid 2008] [client 127.0.0.1:64338] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'infinity_database.users' doesn't exist in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php:35\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(35): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#2 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 35, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:50:18.330819 2024] [php:warn] [pid 8244:tid 2008] [client 127.0.0.1:64338] PHP Warning:  Undefined variable $username in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:50:18.330819 2024] [php:warn] [pid 8244:tid 2008] [client 127.0.0.1:64338] PHP Warning:  Undefined variable $password in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 12, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:50:18.332789 2024] [php:error] [pid 8244:tid 2008] [client 127.0.0.1:64338] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'infinity_database.users' doesn't exist in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php:35\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(35): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#2 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 35, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:57:57.162425 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:64588] PHP Warning:  Undefined array key "password" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:58:17.768564 2024] [php:warn] [pid 8244:tid 2008] [client 127.0.0.1:64607] PHP Warning:  Undefined array key "password" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 10:59:20.124385 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:64652] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:51\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(51): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(18): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 51, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:17:30.739553 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:65113] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:50\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(50): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(18): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 50, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:26:34.396104 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:65161] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:50\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(50): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(18): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 50, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:28:29.615153 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:65176] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:50\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(50): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(18): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 50, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:30:21.776882 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:65188] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:50\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(50): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(18): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 50, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:33:25.110404 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:65219] PHP Warning:  Undefined variable $username in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:33:25.111405 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:65219] PHP Warning:  Undefined variable $password in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 12, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:33:25.112409 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:65219] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:50\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(50): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(13): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 50, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:34:56.009350 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:65229] PHP Warning:  Undefined variable $__POST in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:34:56.009350 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:65229] PHP Warning:  Trying to access array offset on value of type null in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 11, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:34:56.009350 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:65229] PHP Warning:  Undefined variable $__POST in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 12, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:34:56.009350 2024] [php:warn] [pid 8244:tid 2016] [client 127.0.0.1:65229] PHP Warning:  Trying to access array offset on value of type null in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 12, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:34:56.010412 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:65229] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:50\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(50): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 50, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:35:44.327420 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:65241] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:50\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(50): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#3 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 50, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:45:16.071432 2024] [php:error] [pid 8244:tid 2008] [client 127.0.0.1:65401] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(44): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#4 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:45:51.503148 2024] [php:error] [pid 8244:tid 2016] [client 127.0.0.1:65422] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(44): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#4 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:46:27.859475 2024] [php:error] [pid 8244:tid 2008] [client 127.0.0.1:65443] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(44): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#4 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/login.php
+[Fri Jul 19 11:50:15.494710 2024] [php:error] [pid 8244:tid 2036] [client 127.0.0.1:49243] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(44): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(34): User->login()\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php(14): AuthController->login(Array)\n#4 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/login.php
+[Fri Jul 19 12:13:02.644108 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49616] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Fri Jul 19 12:15:58.127785 2024] [php:error] [pid 8244:tid 2020] [client 127.0.0.1:49637] script 'C:/XAMPP/htdocs/php-project/uas-project/profile.php' not found or unable to stat, referer: http://e-commerce.local/
+[Fri Jul 19 12:16:01.778232 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49637] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Fri Jul 19 12:16:06.920786 2024] [php:error] [pid 8244:tid 2020] [client 127.0.0.1:49637] script 'C:/XAMPP/htdocs/php-project/uas-project/logout.php' not found or unable to stat, referer: http://e-commerce.local/
+[Fri Jul 19 12:38:53.175831 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49841] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:41:17.946255 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49856] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:41:20.868603 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49856] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Fri Jul 19 12:41:22.811282 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49856] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Fri Jul 19 12:41:26.795410 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49856] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:41:38.132165 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49858] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Fri Jul 19 12:41:52.694346 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49862] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:41:54.903264 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49862] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Fri Jul 19 12:42:13.266498 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49865] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Fri Jul 19 12:42:41.779744 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49873] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:43:02.550670 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49879] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:45:41.654415 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49918] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:45:43.919203 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49918] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Fri Jul 19 12:45:47.443691 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49918] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:45:50.653217 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49925] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:45:55.562552 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49925] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:47:58.163112 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49940] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:48:04.296153 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49942] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:48:08.692573 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49950] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:48:39.743198 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:49965] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:49:10.358647 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:49977] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:59:29.130395 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:50089] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\login.view.php on line 2
+[Fri Jul 19 12:59:29.131402 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:50089] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 12:59:44.829325 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:50096] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 13:00:05.671328 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:50102] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 13:00:16.181653 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:50108] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 13:00:49.073836 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:50118] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 13:01:00.476278 2024] [php:notice] [pid 8244:tid 2036] [client 127.0.0.1:50124] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 13:09:20.692765 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:50176] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 13:18:15.594145 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:50227] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Fri Jul 19 13:23:33.264107 2024] [php:notice] [pid 8244:tid 2020] [client 127.0.0.1:50290] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:30:20.270320 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:53670] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/signup.php
+[Sat Jul 20 18:30:22.924983 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:53678] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:30:36.441546 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:53699] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:30:41.096512 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:53702] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 18:30:50.525279 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:53716] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/signup.php
+[Sat Jul 20 18:31:00.202030 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:53724] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Sat Jul 20 18:31:09.789703 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:53728] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:31:18.520418 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:53729] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Sat Jul 20 18:47:32.994346 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:53977] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:47:44.445526 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:53990] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:54:21.858545 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54071] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:54:25.660313 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54071] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 41, referer: http://e-commerce.local/
+[Sat Jul 20 18:54:25.662724 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54071] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 18:54:32.225853 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54081] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 41, referer: http://e-commerce.local/
+[Sat Jul 20 18:54:32.227858 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54081] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 18:54:33.575816 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54081] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:55:12.895960 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54094] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:55:14.344011 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54094] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 41, referer: http://e-commerce.local/
+[Sat Jul 20 18:55:22.899315 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54101] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:55:24.840290 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54101] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 41, referer: http://e-commerce.local/
+[Sat Jul 20 18:55:24.843299 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54101] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 18:56:01.118980 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54119] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:56:04.382026 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54119] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 41, referer: http://e-commerce.local/
+[Sat Jul 20 18:56:04.385026 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54119] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 18:56:23.398352 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54134] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 41, referer: http://e-commerce.local/
+[Sat Jul 20 18:56:23.403370 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54134] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 18:56:28.725210 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54141] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:56:34.192826 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54144] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 41, referer: http://e-commerce.local/
+[Sat Jul 20 18:56:34.195821 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54144] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 18:56:52.658909 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54149] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:59:00.860653 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54170] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:59:28.650367 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54182] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 18:59:30.384204 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54187] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:00:19.462228 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54207] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:00:21.939677 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54207] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:00:37.028943 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54218] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:00:43.555387 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54226] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:00:44.125885 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54226] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:00:52.753938 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54231] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:00:55.413786 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54231] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 40, referer: http://e-commerce.local/
+[Sat Jul 20 19:00:55.418787 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54231] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:01:25.732039 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54244] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:01:27.491497 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54244] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 40, referer: http://e-commerce.local/
+[Sat Jul 20 19:01:49.576903 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54265] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:01:51.999393 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54265] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:02:03.913504 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54268] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:02:05.680224 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54268] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:02:08.522042 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54268] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:02:09.926729 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54268] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:02:33.685780 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54277] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:02:38.426728 2024] [php:error] [pid 23152:tid 2004] [client 127.0.0.1:54277] script 'C:/XAMPP/htdocs/php-project/uas-project/views/logout.php' not found or unable to stat, referer: http://e-commerce.local/views/index.view.php
+[Sat Jul 20 19:02:44.028214 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54280] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:02:53.917192 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54284] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:02:55.064844 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54284] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:03:08.775177 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54289] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:03:10.316293 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54289] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:04:40.032515 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54316] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 40, referer: http://e-commerce.local/
+[Sat Jul 20 19:04:46.509811 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54316] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 40, referer: http://e-commerce.local/
+[Sat Jul 20 19:04:50.451743 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54326] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:05:13.986809 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54332] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:05:17.421968 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54332] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 40, referer: http://e-commerce.local/login.php
+[Sat Jul 20 19:05:17.424972 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54332] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Sat Jul 20 19:06:36.828466 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54346] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:06:38.228474 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54346] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 40, referer: http://e-commerce.local/
+[Sat Jul 20 19:06:38.232467 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54346] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:06:42.911294 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54360] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:08:16.554526 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54381] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:08:18.662097 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:54381] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 43, referer: http://e-commerce.local/
+[Sat Jul 20 19:08:18.665108 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54381] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:08:40.133825 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54396] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:08:41.565151 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54396] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:08:45.988040 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54396] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:09:18.281910 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54397] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:09:30.819512 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54405] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login.php
+[Sat Jul 20 19:09:33.176457 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54405] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:09:36.144723 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54405] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:14:02.162669 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54421] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:14:08.099686 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54421] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:14:09.214910 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54421] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:16:11.338383 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54437] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:16:20.279441 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54438] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:16:23.083462 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54438] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:17:05.015148 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54443] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:17:10.324890 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54443] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:17:13.038694 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54443] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:17:17.049724 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54443] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:17:18.205729 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54443] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:17:36.285210 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54446] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:21:08.289316 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54462] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:21:10.283621 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54462] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:23:04.607297 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54496] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:23:07.420776 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54500] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:23:11.170372 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54500] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/login
+[Sat Jul 20 19:23:12.548396 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54500] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:23:15.139199 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54500] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/signup
+[Sat Jul 20 19:23:28.424711 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54502] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/signup
+[Sat Jul 20 19:23:29.465026 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54502] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/signup
+[Sat Jul 20 19:23:31.260558 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54502] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:23:59.358428 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54508] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:24:00.779017 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54508] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 8, referer: http://e-commerce.local/
+[Sat Jul 20 19:24:00.779017 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54508] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:24:13.246917 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54512] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:25:14.695954 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54526] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\login.php on line 2
+[Sat Jul 20 19:25:14.695954 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54526] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:25:23.035677 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54539] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:26:28.906358 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54568] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:26:31.689844 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54568] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2, referer: http://e-commerce.local/
+[Sat Jul 20 19:26:54.249831 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54585] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\partials\\navbar.php on line 2
+[Sat Jul 20 19:27:11.880065 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54590] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 2
+[Sat Jul 20 19:27:11.885988 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54590] PHP Fatal error:  Cannot declare class Router, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php on line 2
+[Sat Jul 20 19:27:42.802510 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54601] PHP Fatal error:  Cannot declare class Router, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php on line 2
+[Sat Jul 20 19:30:25.124585 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54628] PHP Fatal error:  Cannot declare class Router, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php on line 2
+[Sat Jul 20 19:30:31.602093 2024] [php:error] [pid 23152:tid 2004] [client 127.0.0.1:54629] PHP Fatal error:  Uncaught Error: Class "Router" not found in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php:5\nStack trace:\n#0 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 5
+[Sat Jul 20 19:30:37.225912 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54630] PHP Fatal error:  Cannot declare class Router, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php on line 2
+[Sat Jul 20 19:30:41.615846 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54630] PHP Fatal error:  Uncaught Error: Class "HomeController" not found in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php:6\nStack trace:\n#0 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 6
+[Sat Jul 20 19:30:48.152003 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54631] PHP Warning:  Undefined variable $home in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 8
+[Sat Jul 20 19:30:48.152003 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54631] PHP Warning:  Undefined variable $home in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 9
+[Sat Jul 20 19:30:48.152003 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54631] PHP Warning:  Undefined variable $home in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 10
+[Sat Jul 20 19:30:48.152003 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54631] PHP Warning:  Undefined variable $home in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 11
+[Sat Jul 20 19:30:48.157070 2024] [php:error] [pid 23152:tid 2004] [client 127.0.0.1:54631] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, first array member is not a valid class name or object in C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php:16\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php(16): Router->dispatch('GET', '/')\n#1 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php on line 16
+[Sat Jul 20 19:30:54.580627 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54632] PHP Fatal error:  Cannot declare class Router, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php on line 2
+[Sat Jul 20 19:30:59.034704 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54632] PHP Fatal error:  Cannot declare class Router, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php on line 2
+[Sat Jul 20 19:46:14.606446 2024] [php:warn] [pid 23152:tid 2004] [client 127.0.0.1:54974] PHP Warning:  require(controllers/HomeController.php): Failed to open stream: No such file or directory in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 4
+[Sat Jul 20 19:46:14.607440 2024] [php:error] [pid 23152:tid 2004] [client 127.0.0.1:54974] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/HomeController.php' (include_path='C:\\XAMPP\\php\\PEAR') in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php:4\nStack trace:\n#0 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php on line 4
+[Sat Jul 20 19:48:21.958534 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:54982] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 2
+[Sat Jul 20 19:48:21.959519 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54982] PHP Fatal error:  Cannot declare class User, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 2
+[Sat Jul 20 19:48:30.556412 2024] [php:error] [pid 23152:tid 2004] [client 127.0.0.1:54983] PHP Fatal error:  Cannot declare class User, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 2
+[Sat Jul 20 19:48:47.676250 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:54984] PHP Fatal error:  Cannot declare class Database, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\config\\Database.php on line 2
+[Sat Jul 20 19:49:08.525307 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54985] Method: GET, URI: /
+[Sat Jul 20 19:49:11.898788 2024] [php:error] [pid 23152:tid 2004] [client 127.0.0.1:54985] PHP Fatal error:  Cannot declare class User, because the name is already in use in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 2
+[Sat Jul 20 19:49:15.606519 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54985] Method: GET, URI: /
+[Sat Jul 20 19:49:18.422172 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:54985] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sat Jul 20 19:55:27.560390 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55107] Method: GET, URI: /login
+[Sat Jul 20 19:55:29.492283 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55107] Method: GET, URI: /
+[Sat Jul 20 19:55:32.868965 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55107] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sat Jul 20 19:55:34.839608 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55107] Method: GET, URI: /
+[Sat Jul 20 19:56:27.727876 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55116] Method: GET, URI: /
+[Sat Jul 20 19:56:29.219916 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55116] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sat Jul 20 19:56:31.330626 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55116] Method: GET, URI: /
+[Sat Jul 20 19:59:50.174906 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55133] Method: GET, URI: /
+[Sat Jul 20 19:59:52.620151 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55133] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sat Jul 20 20:00:01.135725 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55134] Method: POST, URI: /login, referer: http://e-commerce.local/login
+[Sat Jul 20 20:00:01.197727 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55134] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sat Jul 20 20:00:04.252974 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55134] Method: GET, URI: /, referer: http://e-commerce.local/
+[Sat Jul 20 20:00:48.918492 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55145] Method: GET, URI: /
+[Sat Jul 20 20:00:50.697613 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55155] Method: GET, URI: /
+[Sat Jul 20 20:00:57.557849 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55156] Method: GET, URI: /
+[Sat Jul 20 20:01:23.981497 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55184] Method: GET, URI: /
+[Sat Jul 20 20:01:25.360574 2024] [php:notice] [pid 23152:tid 2004] [client 127.0.0.1:55184] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sat Jul 20 20:01:31.132957 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55186] Method: GET, URI: /login
+[Sat Jul 20 20:07:40.405454 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55252] Method: GET, URI: /login
+[Sat Jul 20 20:07:41.842240 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55252] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sat Jul 20 20:07:45.219369 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55252] Method: GET, URI: /signup
+[Sat Jul 20 20:08:10.106363 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55260] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:08:10.167392 2024] [php:error] [pid 23152:tid 2008] [client 127.0.0.1:55260] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'moreno' for key 'name' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(21): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php(43): AuthController->register(Array)\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php(27): HomeController->signup()\n#4 C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php(26): Router->dispatch('POST', '/signup')\n#5 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:10:29.556229 2024] [php:notice] [pid 23152:tid 2000] [client 127.0.0.1:55315] Method: GET, URI: /signup
+[Sat Jul 20 20:11:10.596134 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:55316] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:11:10.655434 2024] [php:error] [pid 23152:tid 1992] [client 127.0.0.1:55316] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(21): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php(43): AuthController->register(Array)\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php(27): HomeController->signup()\n#4 C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php(26): Router->dispatch('POST', '/signup')\n#5 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:11:46.174388 2024] [php:notice] [pid 23152:tid 2000] [client 127.0.0.1:55323] Method: GET, URI: /signup
+[Sat Jul 20 20:12:12.466883 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:55328] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:12:12.521827 2024] [php:error] [pid 23152:tid 1992] [client 127.0.0.1:55328] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(21): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php(43): AuthController->register(Array)\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php(27): HomeController->signup()\n#4 C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php(26): Router->dispatch('POST', '/signup')\n#5 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:15:05.364202 2024] [php:notice] [pid 23152:tid 2000] [client 127.0.0.1:55335] Method: GET, URI: /signup
+[Sat Jul 20 20:20:24.131171 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:55616] Method: GET, URI: /signup
+[Sat Jul 20 20:20:47.067586 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:55618] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:20:47.148327 2024] [php:error] [pid 23152:tid 1996] [client 127.0.0.1:55618] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(21): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php(43): AuthController->register(Array)\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php(27): HomeController->signup()\n#4 C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php(26): Router->dispatch('POST', '/signup')\n#5 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:57:41.536211 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:55930] Method: GET, URI: /signup
+[Sat Jul 20 20:58:09.447633 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:55931] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:58:37.634205 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:55937] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 20:59:14.921310 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:55959] Method: GET, URI: /signup
+[Sat Jul 20 20:59:47.683650 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:55989] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:03:26.162005 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:56114] Method: GET, URI: /signup
+[Sat Jul 20 21:03:49.283440 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:56133] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:03:49.283440 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:56133] PHP Warning:  Undefined array key "role_id" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 19, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:07:31.887548 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:56301] Method: GET, URI: /signup
+[Sat Jul 20 21:07:59.725590 2024] [php:notice] [pid 23152:tid 2000] [client 127.0.0.1:56303] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:07:59.725590 2024] [php:warn] [pid 23152:tid 2000] [client 127.0.0.1:56303] PHP Warning:  Undefined array key "role_id" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 19, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:08:11.817594 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:56314] Method: GET, URI: /signup
+[Sat Jul 20 21:09:29.458229 2024] [php:notice] [pid 23152:tid 2000] [client 127.0.0.1:56351] Method: GET, URI: /signup
+[Sat Jul 20 21:09:35.459377 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:56353] Method: GET, URI: /signup
+[Sat Jul 20 21:09:57.997353 2024] [php:notice] [pid 23152:tid 2000] [client 127.0.0.1:56355] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:09:57.997353 2024] [php:warn] [pid 23152:tid 2000] [client 127.0.0.1:56355] PHP Warning:  Undefined array key "role_id" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 19, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:09:58.051866 2024] [php:error] [pid 23152:tid 2000] [client 127.0.0.1:56355] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(21): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php(43): AuthController->register(Array)\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php(27): HomeController->signup()\n#4 C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php(26): Router->dispatch('POST', '/signup')\n#5 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:11:54.441486 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:56390] Method: GET, URI: /signup
+[Sat Jul 20 21:12:16.046758 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:56400] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:12:16.100538 2024] [php:error] [pid 23152:tid 1992] [client 127.0.0.1:56400] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'role_id_2' in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php:38\nStack trace:\n#0 C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php(38): PDOStatement->execute()\n#1 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php(20): User->register()\n#2 C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php(43): AuthController->register(Array)\n#3 C:\\XAMPP\\htdocs\\php-project\\uas-project\\routes\\Router.php(27): HomeController->signup()\n#4 C:\\XAMPP\\htdocs\\php-project\\uas-project\\index.php(26): Router->dispatch('POST', '/signup')\n#5 {main}\n  thrown in C:\\XAMPP\\htdocs\\php-project\\uas-project\\models\\User.php on line 38, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:19:54.907013 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:56552] Method: GET, URI: /signup
+[Sat Jul 20 21:20:20.648285 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:56557] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:20:20.648285 2024] [php:warn] [pid 23152:tid 2036] [client 127.0.0.1:56557] PHP Warning:  Undefined array key "role_id" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 19, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:25:38.890115 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:56764] Method: GET, URI: /signup
+[Sat Jul 20 21:26:05.190479 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:56774] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:26:05.190479 2024] [php:warn] [pid 23152:tid 2008] [client 127.0.0.1:56774] PHP Warning:  Undefined array key "role_id" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 19, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:28:24.612864 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:56808] Method: GET, URI: /signup
+[Sat Jul 20 21:28:53.196395 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:56816] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:28:53.196395 2024] [php:warn] [pid 23152:tid 1988] [client 127.0.0.1:56816] PHP Warning:  Undefined array key "role_id" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 40, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:29:08.092264 2024] [php:notice] [pid 23152:tid 2000] [client 127.0.0.1:56838] Method: GET, URI: /signup
+[Sat Jul 20 21:29:32.403933 2024] [php:notice] [pid 23152:tid 2000] [client 127.0.0.1:56841] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:29:32.404943 2024] [php:warn] [pid 23152:tid 2000] [client 127.0.0.1:56841] PHP Warning:  Undefined array key 2 in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 40, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:54:11.819530 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:56962] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 2, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:54:11.872155 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:56962] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sat Jul 20 21:54:22.151991 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:56970] Method: GET, URI: /login
+[Sat Jul 20 21:54:37.083075 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:56973] Method: POST, URI: /login, referer: http://e-commerce.local/login
+[Sat Jul 20 21:55:22.887959 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:56981] Method: GET, URI: /login
+[Sat Jul 20 21:55:33.254274 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:56992] Method: POST, URI: /login, referer: http://e-commerce.local/login
+[Sat Jul 20 21:55:33.334357 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:56992] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sat Jul 20 21:55:36.071740 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:56992] Method: GET, URI: /, referer: http://e-commerce.local/
+[Sat Jul 20 21:55:49.669310 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57002] Method: GET, URI: /signup, referer: http://e-commerce.local/
+[Sat Jul 20 21:55:50.965587 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57002] Method: GET, URI: /signup
+[Sat Jul 20 21:55:54.992044 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57002] Method: GET, URI: /, referer: http://e-commerce.local/
+[Sat Jul 20 21:56:27.051527 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57019] Method: GET, URI: /
+[Sat Jul 20 21:56:28.579431 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57019] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sat Jul 20 21:56:37.787585 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57034] Method: GET, URI: /login
+[Sat Jul 20 21:56:40.365525 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57041] Method: GET, URI: /
+[Sat Jul 20 21:56:44.123331 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57041] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sat Jul 20 21:56:54.706577 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57052] Method: GET, URI: /login
+[Sat Jul 20 21:58:09.721499 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57069] Method: GET, URI: /login
+[Sat Jul 20 21:58:19.028185 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57072] Method: POST, URI: /login, referer: http://e-commerce.local/login
+[Sat Jul 20 21:58:19.087375 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57072] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sat Jul 20 21:58:21.312342 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57072] Method: GET, URI: /logout, referer: http://e-commerce.local/
+[Sat Jul 20 22:00:54.051477 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57097] Method: GET, URI: /logout
+[Sat Jul 20 22:00:56.094474 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57100] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sat Jul 20 22:00:57.296171 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57100] Method: GET, URI: /
+[Sat Jul 20 22:01:00.871358 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57100] Method: GET, URI: /logout, referer: http://e-commerce.local/
+[Sat Jul 20 22:01:46.276787 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57122] Method: GET, URI: /logout
+[Sat Jul 20 22:01:48.483866 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57123] Method: GET, URI: /
+[Sat Jul 20 22:01:51.805698 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57126] Method: GET, URI: /
+[Sat Jul 20 22:01:52.945466 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57126] Method: GET, URI: /
+[Sat Jul 20 22:01:53.163672 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57126] Method: GET, URI: /
+[Sat Jul 20 22:01:53.411174 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57126] Method: GET, URI: /
+[Sat Jul 20 22:01:54.863647 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57126] Method: GET, URI: /logout, referer: http://e-commerce.local/
+[Sat Jul 20 22:02:28.198437 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57141] Method: GET, URI: /
+[Sat Jul 20 22:02:30.252324 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57147] Method: GET, URI: /logout, referer: http://e-commerce.local/
+[Sat Jul 20 22:02:30.267528 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57147] Method: GET, URI: /, referer: http://e-commerce.local/
+[Sat Jul 20 22:02:33.295368 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57147] Method: GET, URI: /
+[Sat Jul 20 22:03:49.736051 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57173] Method: GET, URI: /views/partial/navbar.php
+[Sat Jul 20 22:07:29.261016 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57204] Method: GET, URI: /
+[Sat Jul 20 22:07:31.432061 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57204] Method: GET, URI: /
+[Sat Jul 20 22:07:44.623105 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57207] Method: GET, URI: /
+[Sat Jul 20 22:07:59.418000 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57211] Method: GET, URI: /
+[Sat Jul 20 22:09:11.076152 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57218] Method: GET, URI: /
+[Sat Jul 20 22:14:24.508346 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57230] Method: GET, URI: /
+[Sat Jul 20 22:14:30.371336 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57237] Method: GET, URI: /
+[Sat Jul 20 22:17:50.052888 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57342] Method: GET, URI: /
+[Sat Jul 20 22:18:20.750188 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57366] Method: GET, URI: /
+[Sat Jul 20 22:19:22.402548 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57406] Method: GET, URI: /
+[Sat Jul 20 22:19:49.799235 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57437] Method: GET, URI: /
+[Sat Jul 20 22:20:06.757626 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57454] Method: GET, URI: /
+[Sat Jul 20 22:20:37.430588 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57481] Method: GET, URI: /
+[Sat Jul 20 22:20:42.818779 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57494] Method: GET, URI: /
+[Sat Jul 20 22:20:47.946638 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57496] Method: GET, URI: /
+[Sat Jul 20 22:20:53.872749 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57508] Method: GET, URI: /
+[Sat Jul 20 22:21:19.602179 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57534] Method: GET, URI: /
+[Sat Jul 20 22:22:09.612110 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57574] Method: GET, URI: /
+[Sat Jul 20 22:22:22.734899 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57577] Method: GET, URI: /
+[Sat Jul 20 22:22:28.879068 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57586] Method: GET, URI: /
+[Sat Jul 20 22:22:38.064011 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57592] Method: GET, URI: /
+[Sat Jul 20 22:29:18.753994 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57803] Method: GET, URI: /
+[Sat Jul 20 22:29:29.797283 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57805] Method: GET, URI: /
+[Sat Jul 20 22:29:35.069404 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57825] Method: GET, URI: /
+[Sat Jul 20 22:30:28.457597 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57872] Method: GET, URI: /
+[Sat Jul 20 22:30:32.481002 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57883] Method: GET, URI: /
+[Sat Jul 20 22:30:47.733826 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57904] Method: GET, URI: /
+[Sat Jul 20 22:32:33.886445 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57968] Method: GET, URI: /
+[Sat Jul 20 22:32:55.432908 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57970] Method: GET, URI: /
+[Sat Jul 20 22:33:13.725959 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:57984] Method: GET, URI: /
+[Sat Jul 20 22:33:28.405620 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57994] Method: GET, URI: /
+[Sat Jul 20 22:33:31.002643 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57994] Method: GET, URI: /
+[Sat Jul 20 22:33:34.544985 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:57994] Method: GET, URI: /
+[Sat Jul 20 22:34:00.643660 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:58006] Method: GET, URI: /
+[Sat Jul 20 22:34:48.672209 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:58061] Method: GET, URI: /
+[Sat Jul 20 22:34:52.224814 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:58061] Method: GET, URI: /
+[Sat Jul 20 22:53:48.096731 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:58769] Method: GET, URI: /
+[Sat Jul 20 22:54:00.233998 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:58785] Method: GET, URI: /
+[Sat Jul 20 22:54:23.503580 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:58807] Method: GET, URI: /
+[Sat Jul 20 22:54:26.415236 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:58807] Method: GET, URI: /
+[Sat Jul 20 22:54:47.269132 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:58831] Method: GET, URI: /
+[Sat Jul 20 22:56:09.372997 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:58893] Method: GET, URI: /
+[Sat Jul 20 23:08:09.608978 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:59066] Method: GET, URI: /
+[Sat Jul 20 23:08:13.504806 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59073] Method: GET, URI: /signup, referer: http://e-commerce.local/
+[Sat Jul 20 23:08:47.462739 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:59077] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:08:47.462739 2024] [php:warn] [pid 23152:tid 1992] [client 127.0.0.1:59077] PHP Warning:  Undefined array key 2 in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 42, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:13:16.171039 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59128] Method: GET, URI: /signup
+[Sat Jul 20 23:13:50.083726 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59140] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:14:18.369363 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59164] Method: GET, URI: /signup
+[Sat Jul 20 23:14:19.808701 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59173] Method: GET, URI: /signup
+[Sat Jul 20 23:14:31.077955 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59186] Method: GET, URI: /signup
+[Sat Jul 20 23:14:55.759133 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59194] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:15:09.609891 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59206] Method: GET, URI: /signup
+[Sat Jul 20 23:15:28.255148 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59212] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:15:28.255148 2024] [php:warn] [pid 23152:tid 2036] [client 127.0.0.1:59212] PHP Warning:  Undefined array key 2 in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\AuthController.php on line 19, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:16:33.500887 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59243] Method: GET, URI: /signup
+[Sat Jul 20 23:16:54.448402 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59254] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:16:54.448402 2024] [php:warn] [pid 23152:tid 1996] [client 127.0.0.1:59254] PHP Warning:  Undefined property: HomeController::$user in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 42, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:16:54.448402 2024] [php:warn] [pid 23152:tid 1996] [client 127.0.0.1:59254] PHP Warning:  Attempt to read property "role_id" on null in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 42, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:16:54.448402 2024] [php:warn] [pid 23152:tid 1996] [client 127.0.0.1:59254] PHP Warning:  Undefined array key "" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\controllers\\RouteController.php on line 42, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:19:19.337455 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59276] Method: GET, URI: /signup
+[Sat Jul 20 23:19:55.058207 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:59292] Method: GET, URI: /signup
+[Sat Jul 20 23:20:18.751876 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:59298] Method: POST, URI: /signup, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:28:36.937845 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59373] Method: GET, URI: /signup
+[Sat Jul 20 23:28:39.987995 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59378] Method: GET, URI: /signup.php
+[Sat Jul 20 23:28:48.149005 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59381] Method: GET, URI: /signup.view.php
+[Sat Jul 20 23:28:52.362944 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59387] Method: GET, URI: /signup
+[Sat Jul 20 23:29:33.591702 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59395] Method: GET, URI: /signup
+[Sat Jul 20 23:29:38.229656 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59395] Method: GET, URI: /signup
+[Sat Jul 20 23:29:43.920451 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59403] Method: GET, URI: /signup
+[Sat Jul 20 23:29:56.611520 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59413] Method: GET, URI: /signup
+[Sat Jul 20 23:30:29.704146 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59429] Method: GET, URI: /signup
+[Sat Jul 20 23:30:33.839159 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59432] Method: GET, URI: /signup
+[Sat Jul 20 23:31:05.850165 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59442] Method: GET, URI: /signup
+[Sat Jul 20 23:31:07.697418 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59442] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:31:22.043221 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59453] Method: GET, URI: /login
+[Sat Jul 20 23:31:23.601883 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59453] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sat Jul 20 23:31:27.514914 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59453] Method: GET, URI: /
+[Sat Jul 20 23:31:30.341828 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59453] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sat Jul 20 23:31:32.700482 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59453] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sat Jul 20 23:31:35.067625 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59453] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:32:19.500500 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59467] Method: GET, URI: /login
+[Sat Jul 20 23:32:23.682779 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59467] Method: GET, URI: /login
+[Sat Jul 20 23:32:29.903189 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59473] Method: GET, URI: /login
+[Sat Jul 20 23:32:42.470277 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59491] Method: GET, URI: /login
+[Sat Jul 20 23:32:48.874733 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59494] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sat Jul 20 23:32:50.036839 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59494] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:32:52.672699 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59494] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sat Jul 20 23:32:57.678634 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59501] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:42:16.383403 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59602] Method: GET, URI: /login
+[Sat Jul 20 23:42:39.394805 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59612] Method: GET, URI: /login
+[Sat Jul 20 23:42:44.668003 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59614] Method: GET, URI: /login
+[Sat Jul 20 23:43:16.827616 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59623] Method: GET, URI: /login
+[Sat Jul 20 23:43:56.436387 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59630] Method: GET, URI: /login
+[Sat Jul 20 23:44:08.325562 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59638] Method: GET, URI: /login
+[Sat Jul 20 23:44:16.863460 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59643] Method: GET, URI: /login
+[Sat Jul 20 23:44:23.377925 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59647] Method: GET, URI: /login
+[Sat Jul 20 23:45:05.494171 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59658] Method: GET, URI: /login
+[Sat Jul 20 23:45:17.880715 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59667] Method: GET, URI: /login
+[Sat Jul 20 23:45:19.717550 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59667] Method: GET, URI: /login
+[Sat Jul 20 23:45:24.172975 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59667] Method: GET, URI: /login
+[Sat Jul 20 23:45:40.954920 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:59677] Method: GET, URI: /login
+[Sat Jul 20 23:45:58.040090 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59690] Method: GET, URI: /login
+[Sat Jul 20 23:45:59.648585 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59690] Method: GET, URI: /login
+[Sat Jul 20 23:47:30.980015 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59734] Method: GET, URI: /login
+[Sat Jul 20 23:48:17.307714 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59765] Method: GET, URI: /login
+[Sat Jul 20 23:50:26.888153 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59841] Method: GET, URI: /login
+[Sat Jul 20 23:51:32.092812 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59877] Method: GET, URI: /login
+[Sat Jul 20 23:51:55.925053 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59897] Method: GET, URI: /login
+[Sat Jul 20 23:51:59.941772 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59897] Method: GET, URI: /login
+[Sat Jul 20 23:52:21.679724 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59918] Method: GET, URI: /login
+[Sat Jul 20 23:52:36.314622 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59931] Method: GET, URI: /login
+[Sat Jul 20 23:53:05.400317 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59933] Method: GET, URI: /login
+[Sat Jul 20 23:53:13.043388 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59960] Method: GET, URI: /login
+[Sat Jul 20 23:53:23.661931 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59971] Method: GET, URI: /login
+[Sat Jul 20 23:53:32.981845 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:59983] Method: GET, URI: /login
+[Sat Jul 20 23:53:42.870248 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:59994] Method: GET, URI: /login
+[Sat Jul 20 23:54:17.634368 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60015] Method: GET, URI: /login
+[Sat Jul 20 23:54:22.499235 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60015] Method: GET, URI: /login
+[Sat Jul 20 23:54:37.590581 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60021] Method: GET, URI: /login
+[Sat Jul 20 23:55:01.526358 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60030] Method: GET, URI: /login
+[Sat Jul 20 23:55:50.329371 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60040] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sat Jul 20 23:57:15.528252 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60057] Method: GET, URI: /signup
+[Sat Jul 20 23:57:56.913378 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60068] Method: GET, URI: /signup
+[Sat Jul 20 23:57:59.363831 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60068] Method: GET, URI: /signup
+[Sat Jul 20 23:58:01.516901 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60068] Method: GET, URI: /signup
+[Sat Jul 20 23:58:03.048341 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60076] Method: GET, URI: /signup
+[Sat Jul 20 23:58:04.479798 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60076] Method: GET, URI: /signup
+[Sat Jul 20 23:58:06.543359 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60076] Method: GET, URI: /signup
+[Sat Jul 20 23:58:08.567471 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60076] Method: GET, URI: /signup
+[Sat Jul 20 23:58:10.107159 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60076] Method: GET, URI: /signup
+[Sat Jul 20 23:58:10.993255 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60076] Method: GET, URI: /signup
+[Sat Jul 20 23:58:11.521319 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60076] Method: GET, URI: /signup
+[Sat Jul 20 23:58:22.472622 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60092] Method: GET, URI: /signup
+[Sat Jul 20 23:58:23.682086 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60092] Method: GET, URI: /signup
+[Sat Jul 20 23:58:26.813818 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60092] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sat Jul 20 23:59:13.432805 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60093] Method: GET, URI: /login
+[Sat Jul 20 23:59:59.192243 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60100] Method: GET, URI: /login
+[Sun Jul 21 00:00:26.805368 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60108] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sun Jul 21 00:00:28.019687 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60108] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sun Jul 21 00:00:31.319106 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60108] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sun Jul 21 00:00:35.116358 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60108] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sun Jul 21 00:00:36.152358 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60108] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sun Jul 21 00:00:45.071127 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:47.062266 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:47.882799 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:48.408177 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:48.763615 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:49.123381 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:49.402345 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:50.164421 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:50.553917 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:50.802329 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:00:51.145225 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60112] Method: GET, URI: /signup
+[Sun Jul 21 00:01:04.146271 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60121] Method: GET, URI: /signup
+[Sun Jul 21 00:01:04.894573 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60121] Method: GET, URI: /signup
+[Sun Jul 21 00:01:05.610164 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60121] Method: GET, URI: /signup
+[Sun Jul 21 00:02:00.721632 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60162] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sun Jul 21 00:02:15.207583 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60166] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sun Jul 21 00:02:48.937253 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60179] Method: GET, URI: /signup
+[Sun Jul 21 00:02:50.362978 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60179] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sun Jul 21 00:02:52.491024 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60179] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sun Jul 21 00:02:54.693208 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60184] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sun Jul 21 00:03:36.731163 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60193] Method: GET, URI: /login
+[Sun Jul 21 00:03:48.788974 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60201] Method: GET, URI: /login
+[Sun Jul 21 00:04:12.691241 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60210] Method: GET, URI: /login
+[Sun Jul 21 00:04:27.029692 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60217] Method: GET, URI: /login
+[Sun Jul 21 00:04:51.848736 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:04:55.722215 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:04:56.679702 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:04:57.503898 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:04:57.923969 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:04:58.218908 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:04:58.561119 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:05:00.307404 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:05:02.533186 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:05:02.985315 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:05:07.200080 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60224] Method: GET, URI: /login
+[Sun Jul 21 00:06:16.813547 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60268] Method: GET, URI: /login
+[Sun Jul 21 00:06:21.300621 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60273] Method: GET, URI: /login
+[Sun Jul 21 00:06:25.615391 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60273] Method: GET, URI: /login, referer: http://e-commerce.local/login
+[Sun Jul 21 00:06:29.655745 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60273] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sun Jul 21 00:07:37.752651 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60288] Method: GET, URI: /
+[Sun Jul 21 00:07:54.604534 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60297] Method: GET, URI: /
+[Sun Jul 21 00:07:56.104388 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60297] Method: GET, URI: /
+[Sun Jul 21 00:07:57.888124 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60297] Method: GET, URI: /
+[Sun Jul 21 00:07:59.848849 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60297] Method: GET, URI: /
+[Sun Jul 21 00:10:46.868355 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60317] Method: GET, URI: /
+[Sun Jul 21 00:11:38.448588 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60326] Method: GET, URI: /
+[Sun Jul 21 00:12:50.039784 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60335] Method: GET, URI: /
+[Sun Jul 21 00:13:02.458545 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60345] Method: GET, URI: /
+[Sun Jul 21 00:13:04.473435 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60345] Method: GET, URI: /
+[Sun Jul 21 00:13:08.048501 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60345] Method: GET, URI: /
+[Sun Jul 21 00:13:08.589358 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60345] Method: GET, URI: /
+[Sun Jul 21 00:13:09.422681 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60345] Method: GET, URI: /
+[Sun Jul 21 00:13:29.603240 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60347] Method: GET, URI: /
+[Sun Jul 21 00:13:31.396965 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60347] Method: GET, URI: /
+[Sun Jul 21 00:13:32.913024 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60347] Method: GET, URI: /
+[Sun Jul 21 00:13:34.282532 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60347] Method: GET, URI: /
+[Sun Jul 21 00:13:35.976865 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60347] Method: GET, URI: /
+[Sun Jul 21 00:13:38.782633 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60347] Method: GET, URI: /
+[Sun Jul 21 00:13:46.284259 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60357] Method: GET, URI: /
+[Sun Jul 21 00:13:47.711661 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60357] Method: GET, URI: /
+[Sun Jul 21 00:13:49.040018 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60357] Method: GET, URI: /
+[Sun Jul 21 00:13:52.566683 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60357] Method: GET, URI: /
+[Sun Jul 21 00:15:06.217398 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60375] Method: GET, URI: /
+[Sun Jul 21 00:15:07.702667 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60375] Method: GET, URI: /
+[Sun Jul 21 00:15:09.519139 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60375] Method: GET, URI: /
+[Sun Jul 21 00:15:19.582147 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:20.953235 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:21.496408 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:21.905669 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:22.405515 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:22.809932 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:23.261973 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:23.759811 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:24.195359 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:24.647413 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:25.097387 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:25.663724 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:26.190528 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:26.535419 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:26.862022 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:27.173975 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:27.501981 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:27.814226 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:28.052888 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60382] Method: GET, URI: /
+[Sun Jul 21 00:15:28.858658 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60407] Method: GET, URI: /
+[Sun Jul 21 00:15:29.495128 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60407] Method: GET, URI: /
+[Sun Jul 21 00:17:41.365959 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60478] Method: GET, URI: /
+[Sun Jul 21 00:17:48.462205 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60486] Method: GET, URI: /
+[Sun Jul 21 00:18:02.173133 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60495] Method: GET, URI: /
+[Sun Jul 21 00:22:38.804538 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60625] Method: GET, URI: /
+[Sun Jul 21 00:26:03.594173 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60737] Method: GET, URI: /
+[Sun Jul 21 00:28:01.647149 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60745] Method: GET, URI: /
+[Sun Jul 21 00:28:30.064915 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60750] Method: GET, URI: /
+[Sun Jul 21 00:28:33.320940 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60750] Method: GET, URI: /
+[Sun Jul 21 00:28:35.246427 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60750] Method: GET, URI: /
+[Sun Jul 21 00:28:35.773341 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60750] Method: GET, URI: /
+[Sun Jul 21 00:28:48.394106 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:60760] Method: GET, URI: /
+[Sun Jul 21 00:28:51.461293 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60768] Method: GET, URI: /
+[Sun Jul 21 00:28:53.389174 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60768] Method: GET, URI: /
+[Sun Jul 21 00:28:53.858418 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60768] Method: GET, URI: /
+[Sun Jul 21 00:29:03.560096 2024] [php:notice] [pid 23152:tid 1988] [client 127.0.0.1:60777] Method: GET, URI: /
+[Sun Jul 21 00:29:09.131554 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60784] Method: GET, URI: /
+[Sun Jul 21 00:29:44.403776 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60791] Method: GET, URI: /
+[Sun Jul 21 00:32:17.793817 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60875] Method: GET, URI: /
+[Sun Jul 21 00:33:03.636618 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:33:07.411693 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:33:10.838552 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:33:11.897552 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:33:12.787233 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:33:13.471201 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:33:17.618733 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:33:18.410643 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:33:19.239230 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:60877] Method: GET, URI: /
+[Sun Jul 21 00:34:07.630715 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:10.019428 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:10.658408 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:11.210931 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:11.903266 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:12.539151 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:13.114716 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:13.498510 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:13.927466 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:14.302293 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:34:14.753247 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:60900] Method: GET, URI: /
+[Sun Jul 21 00:43:05.357589 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61195] Method: GET, URI: /
+[Sun Jul 21 00:43:05.387612 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61195] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:45:21.132823 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61213] Method: GET, URI: /
+[Sun Jul 21 00:45:21.163941 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61215] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:49:41.050541 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61317] Method: GET, URI: /
+[Sun Jul 21 00:49:41.085793 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61317] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:49:58.570630 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61319] Method: GET, URI: /
+[Sun Jul 21 00:49:58.584631 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61319] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:51:41.746050 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61355] Method: GET, URI: /
+[Sun Jul 21 00:51:41.762058 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61355] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:55:22.415413 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61395] Method: GET, URI: /
+[Sun Jul 21 00:55:22.448831 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61397] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:55:22.450832 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61398] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:55:22.479907 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61395] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:55:22.495352 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61403] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:56:18.734052 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61413] Method: GET, URI: /
+[Sun Jul 21 00:56:18.766090 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61413] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:56:18.768077 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61415] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:56:18.781168 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61417] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:56:18.797142 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61418] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:08.096140 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61435] Method: GET, URI: /
+[Sun Jul 21 00:57:08.109151 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61435] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:08.127380 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61437] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:08.142543 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61441] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:08.158121 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61443] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:33.665662 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61450] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:59.655856 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61456] Method: POST, URI: /login, referer: http://e-commerce.local/login
+[Sun Jul 21 00:57:59.766788 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61456] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sun Jul 21 00:57:59.786818 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61456] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:59.798158 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61459] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:59.813664 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61462] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:57:59.828992 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61463] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:59:14.134988 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61488] Method: GET, URI: /
+[Sun Jul 21 00:59:14.153985 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61488] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:59:14.166015 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61492] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:59:14.181252 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61496] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:59:14.196286 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61498] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:59:29.301945 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61507] Method: GET, URI: /
+[Sun Jul 21 00:59:29.331958 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61507] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:59:29.334949 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61509] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:59:29.347182 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61512] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 00:59:29.362220 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61511] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:00:26.339697 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61555] Method: GET, URI: /
+[Sun Jul 21 01:00:26.362699 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61555] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:00:26.378697 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61557] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:00:26.392701 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61561] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:00:26.409709 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61562] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:19.949326 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61603] Method: GET, URI: /
+[Sun Jul 21 01:01:19.966329 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61605] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:19.968328 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61603] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:19.996581 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61608] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:20.000623 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61609] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:39.021986 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61624] Method: GET, URI: /
+[Sun Jul 21 01:01:39.052978 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61624] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:39.055980 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61628] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:39.068978 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61631] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:39.083979 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61632] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:58.973581 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61643] Method: GET, URI: /
+[Sun Jul 21 01:01:59.012577 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61647] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:59.016610 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61643] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:59.018614 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61650] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:01:59.044063 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61649] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:03.913120 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61663] Method: GET, URI: /
+[Sun Jul 21 01:03:03.925115 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61663] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:03.930114 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61665] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:03.933113 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61669] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:03.959975 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61668] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:08.803591 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61673] Method: GET, URI: /
+[Sun Jul 21 01:03:08.835615 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61677] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:08.851375 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61673] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:08.867206 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61678] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:08.870211 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61680] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:15.040600 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61684] Method: GET, URI: /
+[Sun Jul 21 01:03:15.062609 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61684] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:15.079600 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61686] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:15.081603 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61687] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:15.084602 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61688] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:42.009311 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61698] Method: GET, URI: /
+[Sun Jul 21 01:03:42.021300 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61698] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:42.041653 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61699] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:42.043667 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61703] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:42.056154 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61701] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:45.763780 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61707] Method: GET, URI: /
+[Sun Jul 21 01:03:45.796780 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61707] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:45.799776 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61709] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:45.811743 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61711] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:45.827563 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61712] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:48.602973 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61718] Method: GET, URI: /
+[Sun Jul 21 01:03:48.636973 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61718] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:48.639977 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61720] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:48.642977 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61721] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:48.669498 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61722] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:51.548275 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61727] Method: GET, URI: /
+[Sun Jul 21 01:03:51.583258 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61727] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:51.587272 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61728] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:51.599293 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61730] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:51.615178 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61732] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:52.303044 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61736] Method: GET, URI: /
+[Sun Jul 21 01:03:52.315045 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61736] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:52.328123 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61738] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:52.344132 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61739] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:52.359808 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61740] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:54.293452 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61745] Method: GET, URI: /
+[Sun Jul 21 01:03:54.325528 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61745] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:54.340719 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61746] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:54.354620 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61748] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:54.370000 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61749] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:54.975651 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61754] Method: GET, URI: /
+[Sun Jul 21 01:03:55.006290 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61754] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:55.021764 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61756] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:55.037039 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61758] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:03:55.053322 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61759] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:04:06.334534 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61766] Method: GET, URI: /
+[Sun Jul 21 01:04:06.368533 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61766] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:04:06.371538 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61768] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:04:06.375534 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61770] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:04:06.378531 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61772] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:04:09.847001 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61778] Method: GET, URI: /
+[Sun Jul 21 01:04:09.860001 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61780] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:04:09.862003 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61778] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:04:09.867002 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61784] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:04:09.883030 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61783] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:05:59.055041 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61795] Method: GET, URI: /
+[Sun Jul 21 01:05:59.070034 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61795] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:05:59.073036 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61797] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:05:59.077037 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61800] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:05:59.103034 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61802] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:06:22.287935 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61809] Method: GET, URI: /
+[Sun Jul 21 01:06:22.299923 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61813] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:06:22.319924 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61814] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:06:22.322923 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61809] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:06:22.349184 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61817] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:06:38.381368 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61827] Method: GET, URI: /
+[Sun Jul 21 01:06:38.412375 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61828] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:06:38.416376 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61830] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:06:38.428355 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61827] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:06:38.443519 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61832] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:09.729899 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61848] Method: GET, URI: /
+[Sun Jul 21 01:07:09.761838 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61850] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:09.765832 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61851] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:09.768835 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61848] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:09.770831 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61853] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:14.438211 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61858] Method: GET, URI: /
+[Sun Jul 21 01:07:14.451211 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61858] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:14.454212 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61860] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:14.479587 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61863] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:14.496618 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61864] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:16.099060 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61867] Method: GET, URI: /
+[Sun Jul 21 01:07:16.132063 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61867] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:16.135063 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61869] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:16.160969 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61871] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:16.176564 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61872] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:35.932234 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61882] Method: GET, URI: /
+[Sun Jul 21 01:07:35.962358 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61882] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:35.965297 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61883] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:35.970297 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61886] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:35.994670 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61887] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:41.256984 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61891] Method: GET, URI: /
+[Sun Jul 21 01:07:41.279982 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:61895] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:41.295996 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:61896] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:41.298975 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:61891] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:07:41.301975 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:61898] Method: GET, URI: /assets/image/about-us.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:10:09.079342 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62006] Method: GET, URI: /
+[Sun Jul 21 01:10:09.093258 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62008] Method: GET, URI: /assets/image/project1.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:10:09.096260 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62012] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:10:09.110445 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62006] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:11:39.292721 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62042] Method: GET, URI: /
+[Sun Jul 21 01:11:39.317731 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62042] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:11:39.320721 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62044] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:12:36.767708 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62059] Method: GET, URI: /
+[Sun Jul 21 01:12:36.788400 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62059] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:12:36.794402 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62062] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:12:53.157875 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62073] Method: GET, URI: /
+[Sun Jul 21 01:12:53.189073 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62077] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:12:53.192085 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62073] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:13:50.087043 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62089] Method: GET, URI: /
+[Sun Jul 21 01:13:50.108045 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62093] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:13:50.111045 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62089] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:15:31.381362 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62149] Method: GET, URI: /
+[Sun Jul 21 01:15:31.429354 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62149] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:15:31.436361 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62152] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:20:34.524179 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62325] Method: GET, URI: /
+[Sun Jul 21 01:20:34.542179 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62327] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:20:34.548185 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62325] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:20:41.879347 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62339] Method: GET, URI: /
+[Sun Jul 21 01:20:41.909783 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62339] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:20:41.924784 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62342] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:20:42.841852 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62346] Method: GET, URI: /
+[Sun Jul 21 01:20:42.853845 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62346] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:20:42.873845 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62347] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:20:44.508949 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62352] Method: GET, URI: /
+[Sun Jul 21 01:20:44.519950 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62352] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:20:44.521950 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62353] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:03.469183 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62357] Method: GET, URI: /
+[Sun Jul 21 01:21:03.480194 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62357] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:03.500211 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62359] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:10.026389 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62362] Method: GET, URI: /
+[Sun Jul 21 01:21:10.063399 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62362] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:10.067395 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62363] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:14.768195 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62367] Method: GET, URI: /
+[Sun Jul 21 01:21:14.799368 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62367] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:14.802294 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62369] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:28.574698 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62373] Method: GET, URI: /
+[Sun Jul 21 01:21:28.594641 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62373] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:28.615688 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62377] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:31.834978 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62380] Method: GET, URI: /
+[Sun Jul 21 01:21:31.850982 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62380] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:31.852986 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62381] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:42.443805 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62389] Method: GET, URI: /
+[Sun Jul 21 01:21:42.474815 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62389] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:42.479813 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62391] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:45.867388 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62394] Method: GET, URI: /
+[Sun Jul 21 01:21:45.904389 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62394] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:45.919876 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62397] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:47.151126 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62400] Method: GET, URI: /
+[Sun Jul 21 01:21:47.180172 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62400] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:47.182176 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62402] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:47.628378 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62405] Method: GET, URI: /
+[Sun Jul 21 01:21:47.639385 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62405] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:47.641390 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62407] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:48.034031 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62410] Method: GET, URI: /
+[Sun Jul 21 01:21:48.064278 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62410] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:48.066275 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62412] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:48.454871 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62415] Method: GET, URI: /
+[Sun Jul 21 01:21:48.486896 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62415] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:21:48.490896 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62417] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:12.350413 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62425] Method: GET, URI: /
+[Sun Jul 21 01:22:12.386414 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62425] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:12.402413 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62427] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:37.088065 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62434] Method: GET, URI: /
+[Sun Jul 21 01:22:37.105064 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62436] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:37.113064 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62434] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:39.328896 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62441] Method: GET, URI: /
+[Sun Jul 21 01:22:39.364892 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62441] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:39.367384 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62443] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:39.909990 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62447] Method: GET, URI: /
+[Sun Jul 21 01:22:39.942039 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62447] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:39.945039 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62449] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:40.238081 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62452] Method: GET, URI: /
+[Sun Jul 21 01:22:40.269074 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62452] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:40.284875 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62454] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:40.582140 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62457] Method: GET, URI: /
+[Sun Jul 21 01:22:40.614149 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62457] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:40.630136 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62459] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:40.879640 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62462] Method: GET, URI: /
+[Sun Jul 21 01:22:40.910645 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62462] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:40.926270 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62464] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:41.122865 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62467] Method: GET, URI: /
+[Sun Jul 21 01:22:41.135872 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62467] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:41.139865 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62468] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:41.387892 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62472] Method: GET, URI: /
+[Sun Jul 21 01:22:41.423897 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62472] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:41.426895 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62474] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:41.670628 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62478] Method: GET, URI: /
+[Sun Jul 21 01:22:41.702660 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62478] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:41.705663 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62480] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:41.890540 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62484] Method: GET, URI: /
+[Sun Jul 21 01:22:41.922557 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62484] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:41.924558 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62486] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:42.101733 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62489] Method: GET, URI: /
+[Sun Jul 21 01:22:42.114734 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62489] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:42.126734 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62491] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:42.346329 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62494] Method: GET, URI: /
+[Sun Jul 21 01:22:42.377348 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62496] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:42.394010 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62494] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:42.533633 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62499] Method: GET, URI: /
+[Sun Jul 21 01:22:42.565626 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62500] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:22:42.581438 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62499] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:25:50.065974 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62528] Method: GET, URI: /
+[Sun Jul 21 01:25:50.065974 2024] [php:error] [pid 23152:tid 1996] [client 127.0.0.1:62528] PHP Parse error:  syntax error, unexpected token "isset", expecting "(" in C:\\XAMPP\\htdocs\\php-project\\uas-project\\views\\index.view.php on line 112
+[Sun Jul 21 01:26:15.906619 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62529] Method: GET, URI: /
+[Sun Jul 21 01:26:15.938802 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62536] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:15.954759 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62529] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:37.519878 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62542] Method: GET, URI: /
+[Sun Jul 21 01:26:37.531870 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62544] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:37.536904 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62542] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:46.512736 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62547] Method: GET, URI: /logout, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:46.519736 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62547] Method: GET, URI: /, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:46.550735 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62547] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:46.564991 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62549] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:50.590750 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62553] Method: GET, URI: /
+[Sun Jul 21 01:26:50.622053 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62553] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:26:50.637964 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62557] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:27:00.548008 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62560] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sun Jul 21 01:27:20.867573 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62562] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sun Jul 21 01:27:20.900572 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62562] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:27:20.902572 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62563] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:02.573345 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62569] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:05.340309 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62574] Method: GET, URI: /signup, referer: http://e-commerce.local/login
+[Sun Jul 21 01:28:08.890894 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62574] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sun Jul 21 01:28:11.114682 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62574] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sun Jul 21 01:28:11.127696 2024] [php:notice] [pid 23152:tid 2008] [client 127.0.0.1:62578] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:11.129692 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62574] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:35.239824 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62590] Method: GET, URI: /
+[Sun Jul 21 01:28:35.268823 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62592] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:35.272827 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62590] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:38.087334 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62598] Method: GET, URI: /login, referer: http://e-commerce.local/signup
+[Sun Jul 21 01:28:39.227916 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62598] Method: GET, URI: /
+[Sun Jul 21 01:28:39.258931 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62598] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:39.261925 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62599] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:49.915087 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62607] Method: GET, URI: /
+[Sun Jul 21 01:28:49.929088 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62607] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:49.931082 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62609] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:59.261444 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62616] Method: GET, URI: /
+[Sun Jul 21 01:28:59.274445 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62616] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:28:59.276443 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62618] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:29:10.169462 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62621] Method: GET, URI: /
+[Sun Jul 21 01:29:10.200467 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62621] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:29:10.202467 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62625] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:29:26.271391 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62628] Method: GET, URI: /login, referer: http://e-commerce.local/
+[Sun Jul 21 01:29:54.752766 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62636] Method: POST, URI: /login, referer: http://e-commerce.local/login
+[Sun Jul 21 01:29:54.830386 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62636] Method: GET, URI: /, referer: http://e-commerce.local/login
+[Sun Jul 21 01:29:54.844391 2024] [php:notice] [pid 23152:tid 1992] [client 127.0.0.1:62636] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:29:54.847393 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62639] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:30:16.028592 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62651] Method: GET, URI: /logout, referer: http://e-commerce.local/
+[Sun Jul 21 01:30:16.043257 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62651] Method: GET, URI: /, referer: http://e-commerce.local/
+[Sun Jul 21 01:30:16.074922 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62655] Method: GET, URI: /assets/image/project2.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:30:16.090247 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62651] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:32:02.972059 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62669] Method: GET, URI: /
+[Sun Jul 21 01:32:03.002796 2024] [php:notice] [pid 23152:tid 2036] [client 127.0.0.1:62669] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/
+[Sun Jul 21 01:32:27.839720 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62679] Method: GET, URI: /
+[Sun Jul 21 01:32:27.871720 2024] [php:notice] [pid 23152:tid 1996] [client 127.0.0.1:62679] Method: GET, URI: /assets/image/project3.jpg, referer: http://e-commerce.local/

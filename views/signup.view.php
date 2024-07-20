@@ -2,36 +2,41 @@
     <?php require("partials/navbar.php") ?>
     <section class="gradient-custom">
         <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
+            <?php if(isset($_SESSION['id'])): ?>
+            <div class="mt-5">
+                <h1>Page Not Found</h1>
+            </div>
+            <?php else : ?>
+            <div class="row d-flex justify-content-center align-items-center h-100 mt-5">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                    <div class="card bg-black text-white" style="border-radius: 1rem;" data-aos="zoom-in">
+                    <div class="card bg-black text-white" style="border-radius: 1rem;">
                         <div class="card-body p-5">
                             <div class="mb-md-5 mt-md-4 pb-5">
                                 <h2 class="fw-bold mb-2 text-uppercase text-center">Sign Up</h2>
                                 <p class="text-white-50 mb-5 text-center">Please Register To Create An Account</p>
                                 <form action="" method="POST">
-                                    <div data-mdb-input-init class="form-outline form-white mb-4">
-                                        <label class="form-label" for="usernameX">Username</label>
+                                    <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
                                         <input type="text" name="username" id="usernameX" class="form-control form-control-lg" require />
+                                        <label class="form-label" for="usernameX">Username</label>
                                     </div>
-                                    <div data-mdb-input-init class="form-outline form-white mb-4">
-                                        <label class="form-label" for="typeNameX">Name</label>
+                                    <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
                                         <input type="text" name="name" id="typeNameX" class="form-control form-control-lg" require />
+                                        <label class="form-label" for="typeNameX">Name</label>
                                     </div>
 
-                                    <div data-mdb-input-init class="form-outline form-white mb-4">
-                                        <label class="form-label" for="typeEmailX">Email</label>
+                                    <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
                                         <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" require />
+                                        <label class="form-label" for="typeEmailX">Email</label>
                                     </div>
 
-                                    <div data-mdb-input-init class="form-outline form-white mb-4">
-                                        <label class="form-label" for="typePasswordX">Password</label>
+                                    <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
                                         <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" require />
+                                        <label class="form-label" for="typePasswordX">Password</label>
                                     </div>
 
-                                    <div data-mdb-input-init class="form-outline form-white mb-4">
-                                        <label class="form-label" for="typePasswordConfX">Password Confirmation</label>
+                                    <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
                                         <input type="password" id="typePasswordConfX" name="passwordConf"  class="form-control form-control-lg" require />
+                                        <label class="form-label" for="typePasswordConfX">Password Confirmation</label>
                                     </div>
                                     
                                     <div data-mdb-input-init class="form-outline form-white mb-4">
@@ -47,7 +52,7 @@
                                 </div>
                             </div>
                             <div>
-                                <p class="mb-0">Already have an account? <a href="login.php" class="text-white-100 fw-bold">Login</a>
+                                <p class="mb-0">Already have an account? <a href="login" class="text-white-100 fw-bold ">Login</a>
                                 </p>
                             </div>
                         </div>
@@ -55,5 +60,6 @@
                 </div>
             </div>
         </div>
+        <?php endif; ?>
     </section>
 <?php require("partials/footer.php") ?>
