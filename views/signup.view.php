@@ -14,33 +14,33 @@
                             <div class="mb-md-5 mt-md-4 pb-5">
                                 <h2 class="fw-bold mb-2 text-uppercase text-center">Sign Up</h2>
                                 <p class="text-white-50 mb-5 text-center">Please Register To Create An Account</p>
-                                <form action="" method="POST">
+                                <form action="signup" method="POST" enctype="multipart/form-data">
                                     <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
-                                        <input type="text" name="username" id="usernameX" class="form-control form-control-lg" require />
+                                        <input type="text" placeholder="" name="username" id="usernameX" class="form-control form-control-lg" require />
                                         <label class="form-label" for="usernameX">Username</label>
                                     </div>
                                     <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
-                                        <input type="text" name="name" id="typeNameX" class="form-control form-control-lg" require />
+                                        <input type="text" placeholder="" name="name" id="typeNameX" class="form-control form-control-lg" require />
                                         <label class="form-label" for="typeNameX">Name</label>
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
-                                        <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" require />
+                                        <input type="email" placeholder="" id="typeEmailX" name="email" class="form-control form-control-lg" require />
                                         <label class="form-label" for="typeEmailX">Email</label>
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
-                                        <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" require />
+                                        <input type="password" placeholder="" id="typePasswordX" name="password" class="form-control form-control-lg" require />
                                         <label class="form-label" for="typePasswordX">Password</label>
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
-                                        <input type="password" id="typePasswordConfX" name="passwordConf"  class="form-control form-control-lg" require />
+                                        <input type="password" placeholder="" id="typePasswordConfX" name="passwordConf"  class="form-control form-control-lg" require />
                                         <label class="form-label" for="typePasswordConfX">Password Confirmation</label>
                                     </div>
                                     
                                     <div data-mdb-input-init class="form-outline form-white mb-4">
-                                        <label class="form-label" for="typeImageX">Select Profile Image</label>
+                                        <label class="form-label" placeholder="" for="typeImageX">Select Profile Image</label>
                                         <input type="file" id="typeImageX" name="profile" class="form-control form-control-lg" />
                                     </div>
                                     <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary w-100 btn-lg px-5" style="border-radius: 10px;" type="submit">Register</button>

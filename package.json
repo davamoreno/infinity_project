@@ -5,8 +5,7 @@
   "scripts": {
     "build": "webpack",
     "watch:scss": "nodemon -e scss -x \"npm run build\"",
-    "watch:js": "nodemon -e js -x \"npm run build\"",
-    "watch": "npm run watch:scss & npm run watch:js"
+    "watch": "npm run watch:scss"
   },
   "watch": {
     "sass": "src/*.scss"

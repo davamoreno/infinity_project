@@ -10,10 +10,12 @@
         <div class="row">
             <div data-aos="zoom-in" class="col-md-4 mb-4">
                 <div class="card bg-dark text-white">
-                    <div class="card-body">
-                        <h3 class="card-title">Web Development</h3>
-                        <p class="card-text">We create stunning and efficient websites tailored to your business needs.</p>
-                    </div>
+                    <a href="/services/web-development">
+                        <div class="card-body">
+                            <h3 class="card-title">Web Development</h3>
+                            <p class="card-text">We create stunning and efficient websites tailored to your business needs.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div data-aos="fade-up" class="col-md-4 mb-4">
@@ -138,5 +140,24 @@
             </div>
         </div>
     </section>
+
+    <section class="mt-5">
+        <h3 class="text-center">Project That We Made</h3>
+        <div class="slider" id="slider" style="--width: 120px; --height: 70px; --quantity: -10; ">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="assets/image/slider1_2.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="assets/image/slider1_2.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="assets/image/slider3.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="assets/image/slider4.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="assets/image/slider1_2.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="assets/image/slider1_2.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="assets/image/slider1_2.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="assets/image/slider1_2.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="assets/image/slider1_2.jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="assets/image/slider1_2.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
 </main>
+
 <?php require("partials/footer.php") ?>

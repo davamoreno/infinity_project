@@ -18,12 +18,12 @@
                                     <p class="text-white-50 mb-5">Please enter your login and password!</p>
                                     <form action="/login" method="POST">
                                         <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
-                                            <input type="text" name="username" id="usernameX" class="form-control form-control-lg">
+                                            <input type="text" name="username" placeholder=" " id="usernameX" class="form-control form-control-lg">
                                             <label class="form-label" for="usernameX">Username</label>
                                         </div>
 
                                         <div data-mdb-input-init class="form-outline form-white mb-4 input-field">
-                                          <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" />
+                                          <input type="password" id="typePasswordX" placeholder=" " name="password" class="form-control form-control-lg" />
                                           <label class="form-label" for="typePasswordX">Password</label>
                                         </div>
                                         <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary w-100 btn-lg px-5" style="border-radius: 10px;" type="submit">Login</button>

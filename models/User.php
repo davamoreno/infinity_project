@@ -15,7 +15,7 @@ class User {
     {
         $this->conn = $db;
     }
-
+    
     public function register() {
 
         $query = 'INSERT INTO ' . $this->table . ' (name, username, email, password, profile, role_id) 
@@ -26,7 +26,7 @@ class User {
         $this->username = htmlspecialchars(strip_tags($this->username));
         $this->email = htmlspecialchars(strip_tags($this->email));
         $this->password = password_hash($this->password, PASSWORD_DEFAULT);
-        $this->profile = htmlspecialchars(strip_tags($this->profile));
+        // $this->profile = htmlspecialchars(strip_tags($this->profile));
 
         $stmt->bindParam(':name', $this->name);
         $stmt->bindParam(':username', $this->username);
@@ -64,4 +64,10 @@ class User {
         }
         return false;
     }
+    public function getUserById($id) {
+        $stmt = $this->conn->prepare("SELECT * FROM user WHERE id = :id");
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }    
 }
